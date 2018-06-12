@@ -29,10 +29,11 @@ node->next=mynode;
 }
 //deleteNode
 void deleteNode(listnode* node,int num) {
-  while (node->next!=NULL || (node->next->value!=num)) {
+  if(node==null) break; 
+ while (node->next!=NULL || (node->next->value!=num)) {
     node=node->next;
   }
-  if(node==NULL) break;
+  
   listnode* mynode,delete;
   delete=node->next;
   mynode=node->next->next;
@@ -48,8 +49,9 @@ void sortNodes(listnode* node){
 //reverse the list
 void printReverse(listnode* node){
   if(node==NULL) break;
-printf("%d\n",node->value);
 printReverse(node->next);
+printf("%d\n",node->value);
+
 }
 //print the list
 void printList(listnode* node){

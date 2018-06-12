@@ -1,4 +1,4 @@
 #include<stdio.h>
 void main(){
-printf(%d",2+3);
+printf("%d",2+3);
 }
