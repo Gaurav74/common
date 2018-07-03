@@ -29,11 +29,11 @@ node->next=mynode;
 }
 //deleteNode
 void deleteNode(listnode* node,int num) {
-  if(node==null) break; 
+  if(node==null) break;
  while (node->next!=NULL || (node->next->value!=num)) {
     node=node->next;
   }
-  
+
   listnode* mynode,delete;
   delete=node->next;
   mynode=node->next->next;
@@ -43,7 +43,14 @@ void deleteNode(listnode* node,int num) {
 // sort Nodes
 
 void sortNodes(listnode* node){
+int len=0-;
+if(node==null) break;
+while(node!=null){
+mode=node->next;
+len++;
+  }
 
+  
 
 }
 //reverse the list
